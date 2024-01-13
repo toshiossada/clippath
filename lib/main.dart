@@ -6,8 +6,10 @@ import 'page3.dart';
 import 'page4.dart';
 import 'page5.dart';
 import 'page6.dart';
+import 'page7.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MainApp());
 }
 
@@ -71,6 +73,12 @@ class _HomePageState extends State<HomePage> {
                     MaterialPageRoute(builder: (context) => const Page6()));
               },
               child: const Text('Clock')),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Page7()));
+              },
+              child: const Text('Camera')),
         ],
       )),
     );

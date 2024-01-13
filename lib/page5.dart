@@ -17,7 +17,6 @@ class _Page5State extends State<Page5> with SingleTickerProviderStateMixin {
   late final animationText =
       IntTween(begin: 0, end: 100).animate(animationController);
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
